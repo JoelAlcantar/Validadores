@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Vista
 {
-    public partial class Form1 : Form
+    public partial class Principal : Form
     {
-        public Form1()
+        public Principal()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Validador a = new Validador();
+            int contador = 0;
+            if(esEntero(textBox1.Text))
         }
     }
 }
